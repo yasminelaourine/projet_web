@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VESTIGES | Discover Tunisia</title>
+    <link rel="stylesheet" href="tun.css" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="logo-container">
+        <img src="vestiges.jpg" alt="Vestiges Logo" class="logo" />
+        <span class="website-name">VESTIGES</span>
+      </div>
+
+      <nav class="navigation">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="discover.html">Découvrir</a>
+        <a href="map.html">Carte interactive</a>
+      </nav>
+
+      <div class="search-container">
+        <input type="search" placeholder="Search a site..." />
+        <button type="button">Rechercher</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="welcome-section">
+        <h2>Welcome to VESTIGES</h2>
+        <p>this is the menu</p>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="vestiges.jpg" alt="Vestiges Logo" />
+          <h2>VESTIGES</h2>
+          <p>
+            Faire découvrir et valoriser le riche patrimoine archéologique et
+            culturel de la Tunisie.
+          </p>
+        </div>
+
+        <div class="footer-mission">
+          <h3>Notre Mission</h3>
+          <p>
+            Nous sommes des étudiants de l'ensit, passionnés par la valorisation
+            du patrimoine tunisien.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <h3>Explore</h3>
+            <a href="index.html">Accueil</a>
+            <a href="discover.html">Découvrir</a>
+            <a href="map.html">Carte interactive</a>
+          </div>
+
+          <div>
+            <h3>Information</h3>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="sources.html">Sources & References</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 VESTIGES. All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Suivez-nous</h3>
+
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">
+            <img src="facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <img src="insta.jpg" alt="Instagram" />
+          </a>
+
+          <a href="#" aria-label="YouTube">
+            <img src="youtube.png" alt="YouTube" />
+          </a>
+        </div>
+      </div>
+
+      <div class="newsletter">
+        <h3>Restez informés</h3>
+        <p>Inscrivez-vous pour découvrir nos nouveautés.</p>
+
+        <form class="newsletter-form">
+          <input type="email" placeholder="Votre adresse e-mail" required />
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
+<!---------------------------------------------------------the page of sources---------------------------------------------!>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sources et références - VESTIGES</title>
+    <link rel="stylesheet" href="tun.css" />
+  </head>
+
+  <body>
+    <h1>Sources et références</h1>
+
+    <h2>UNESCO</h2>
+    <p>Informations sur le patrimoine mondial.</p>
+    <a href="https://whc.unesco.org/">Visiter le site</a>
+
+    <h2>Institut National du Patrimoine</h2>
+    <p>Informations sur le patrimoine archéologique tunisien.</p>
+    <a href="https://www.inp2020.tn/">Visiter le site</a>
+  </body>
+</html>
+
