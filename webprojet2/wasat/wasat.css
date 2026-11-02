@@ -1,0 +1,106 @@
+.des{
+    width: 30%;
+    margin: 15px;
+    border-radius: 3px 5px 6px 7px;
+    box-shadow: 3px 3px 10px 5px black;
+}
+.des:hover{
+    opacity: 85%;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    margin-right:10px ;
+    font-size: 20px;
+}
+p{
+    padding-top: 40px;
+    padding-left:30px ;
+    padding-bottom: 30px;
+    font-size: 17px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    line-height: 1.5;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+}
+#links{
+    position: relative;
+    right: 50px;
+    top: 50px;
+
+}
+video{
+    margin-left: 18% ;
+    margin-bottom: 2%;
+    border-radius: 10px 5px 10px 7px;
+    box-shadow: 5px 5px 5px 5px black;
+    width: 60%;
+    position: relative;
+    
+}
+footer{
+    background-color: transparent;
+    box-shadow: 0px 1px 1px 1px gray;
+    border-radius: 2px;
+    text-align: center;
+}
+main{
+     background-color: transparent;
+    box-shadow: 0px 1px 1px 1px gray;
+    border-radius: 2px;
+    padding: 15px;
+}
+header{
+    background-color: transparent;
+    box-shadow: 0px 1px 1px 1px gray;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.couple{
+    margin-left: 20%;
+}
+.ps{
+    width: 70%;
+}
+.imgs{
+    position: absolute;
+    top:10px;
+    right: 20px;
+    width: 20%;
+    margin-top: 15px;
+}
+.div-content{
+    position: relative;
+    margin-top: 100px;
+    box-shadow: 0px 1px 1px 1px gray;
+    border-radius: 2px;
+    background-color: rgb(46, 42, 42);
+    height: 250px;
+    width: 95%;
+    margin: 2%;
+    border-radius: 8px;
+    height: fit-content;
+}
+h3{
+    text-align: center;
+    font-size:35px;
+    box-shadow: 0px 1px 1px 1px gray;
+    border-radius: 2px;
+    padding: 20px;
+    width: 95%;
+    margin: 20px;
+}
+.ptit{
+    font-size: 25px;
+    color: white;
+    padding: 15px 15px 0px 15px;
+}
