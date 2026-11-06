@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nos sites antiques</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;font-family:Georgia,Times,serif}
+
+.page{
+  display:grid;height:100vh;
+  grid-template-columns:33fr 34fr 33fr;
+  grid-template-rows:repeat(100,1fr);
+}
+
+/* COLONNE GAUCHE : video + titre */
+.gauche{grid-column:1;grid-row:1 / 101;position:relative;overflow:hidden;background:linear-gradient(135deg,#a89572,#5b4a33)}
+.gauche video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;filter:sepia(.25) contrast(1.05)}
+.ttl{position:absolute;left:0;right:0;top:0;padding:5vh 8% 16vh;background:linear-gradient(rgba(10,10,10,.85),transparent);pointer-events:none}
+.ttl h1{margin:0;font-size:3.2vw;font-weight:400;letter-spacing:.15em;text-transform:uppercase;line-height:1.25;color:#e0c48a}
+.ttl i{display:block;width:40%;border-top:.8vh solid #2f6f66;margin-top:2.5vh}
+
+/* BOITE 3 : sombre, img1.jpg en fond */
+.boite3{grid-column:2;grid-row:1 / 43;overflow:hidden;padding:3vh 7%;display:flex;flex-direction:column;justify-content:center;
+  background:linear-gradient(rgba(35,42,41,.35),rgba(35,42,41,.35)),url("img1.jpg") center/cover no-repeat,#232a29;
+  color:#e4e1d6;border-left:.5vw solid #2f6f66}
+.boite3 h2{font-size:3vw;font-weight:400;margin:0 0 2vh;line-height:1.1;color:#c79a4a;letter-spacing:.03em}
+.boite3 p{font-size:1.45vw;line-height:1.5;margin:0}
+
+/* BOITE 4 : claire */
+.boite4{grid-column:2;grid-row:43 / 101;overflow:hidden;padding:3vh 7%;display:flex;flex-direction:column;justify-content:center;background:#e4e1d6;color:#17191a}
+.boite4 h3{font-size:2.8vw;font-weight:400;margin:0 0 2vh;line-height:1.2;font-style:italic}
+.boite4 hr{width:30%;border:0;border-top:.8vh solid #2f6f66;margin:0 0 2vh}
+.boite4 p{font-size:1.5vw;line-height:1.5;margin:0 0 1.5vh;color:#17191a}
+
+/* BOITE 5 : photo (80%) */
+.boite5{grid-column:3;grid-row:1 / 81;overflow:hidden;background:linear-gradient(135deg,#2f6f66,#17191a)}
+.boite5 img{width:100%;height:100%;object-fit:cover;display:block;filter:sepia(.25) contrast(1.05)}
+
+/* BOITE 6 : sombre (20%) */
+.boite6{grid-column:3;grid-row:81 / 101;overflow:hidden;padding:1.5vh 7%;display:flex;flex-direction:column;justify-content:center;background:#17191a;color:#e4e1d6;border-top:.8vh solid #c79a4a}
+.boite6 h3{font-size:2vw;font-weight:400;margin:0 0 .8vh;line-height:1.2;color:#c79a4a}
+.boite6 p{font-size:1.3vw;line-height:1.35;margin:0}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- COLONNE GAUCHE -->
+  <div class="gauche">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="vd.mp4" type="video/mp4">
+    </video>
+    <div class="ttl"><h1>Mosqu&eacute;e Okba Ben Nafaa</h1><i></i></div>
+  </div>
+
+  <!-- BOITE 3 -->
+  <div class="boite3">
+    <h2>Okba Ben Nafaa</h2>
+    <p>Compagnon du Proph&egrave;te et chef militaire arabe, Okba Ben Nafaa fonde la ville de Kairouan en 670. Elle devient la premi&egrave;re grande ville arabo-musulmane du Maghreb et la base de la conqu&ecirc;te de l&#8217;Ifriqiya.</p>
+  <a href="https://www.google.com/maps/search/?api=1&query=Grande+Mosquee+de+Kairouan+Tunisie" target="_blank">
+      Voir la localisation sur Google Maps
+    </a>
+    </div>
+
+  <!-- BOITE 4 -->
+  <div class="boite4">
+    <h3>La Grande Mosqu&eacute;e</h3>
+    <hr>
+    <p>Fond&eacute;e par Okba en 670, la mosqu&eacute;e a &eacute;t&eacute; reconstruite plusieurs fois. Elle doit l&#8217;essentiel de sa forme actuelle aux Aghlabides, au IX<sup>e</sup>&nbsp;si&egrave;cle.</p>
+    <p>Sa vaste cour, sa salle de pri&egrave;re &agrave; colonnes et son minaret massif en font l&#8217;un des monuments majeurs de l&#8217;Occident musulman.</p>
+  </div>
+
+  <!-- BOITE 5 -->
+  <div class="boite5">
+    <img src="img2.jpg" alt="Mosqu&eacute;e Okba Ben Nafaa">
+  </div>
+
+  <!-- BOITE 6 -->
+  <div class="boite6">
+    <h3>Patrimoine mondial</h3>
+    <p>La m&eacute;dina de Kairouan est inscrite &agrave; l&#8217;UNESCO depuis 1988.</p>
+  </div>
+
+</div>
+
+</body>
+</html>

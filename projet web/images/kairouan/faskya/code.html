@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bassins aghlabides</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;font-family:Georgia,Times,serif}
+
+.page{
+  display:grid;height:100vh;
+  grid-template-columns:33fr 34fr 33fr;
+  grid-template-rows:repeat(100,1fr);
+}
+
+/* COLONNE GAUCHE : vidéo + titre */
+.gauche{grid-column:1;grid-row:1 / 101;position:relative;overflow:hidden;background:linear-gradient(135deg,#6fa8cf,#2f6b96)}
+.gauche video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block}
+.ttl{position:absolute;left:0;right:0;top:0;padding:5vh 8% 16vh;background:linear-gradient(rgba(8,24,38,.75),transparent);pointer-events:none}
+.ttl h1{margin:0;font-size:3.2vw;font-weight:400;letter-spacing:.1em;text-transform:uppercase;line-height:1.25;color:#bfe3f8}
+.ttl i{display:block;width:40%;border-top:.8vh solid #7cc4ee;margin-top:2.5vh}
+
+/* BOITE 3 : image sombre (img1.webp) avec texte par-dessus */
+.boite3{grid-column:2;grid-row:1 / 43;overflow:hidden;padding:4vh 7%;display:flex;flex-direction:column;justify-content:center;
+  background:linear-gradient(rgba(8,24,38,.35),rgba(8,24,38,.35)),url("img1.webp") center/cover no-repeat,#081826;
+  color:#eef6fc;border-left:.5vw solid #3a9bd5}
+.boite3 h2{font-size:3vw;font-weight:400;margin:0 0 2vh;line-height:1.1;color:#8fd0f2}
+.boite3 p{font-size:1.5vw;line-height:1.55;margin:0}
+
+/* BOITE 4 : bleu très pâle */
+.boite4{grid-column:2;grid-row:43 / 101;overflow:hidden;padding:4vh 7%;display:flex;flex-direction:column;justify-content:center;background:#e9f3fa;color:#0e2a3f}
+.boite4 h3{font-size:2.7vw;font-weight:400;margin:0 0 2vh;line-height:1.2;color:#0b4a7a}
+.boite4 hr{width:30%;border:0;border-top:.8vh solid #2f7fb8;margin:0 0 2.5vh}
+.boite4 p{font-size:1.5vw;line-height:1.55;margin:0}
+
+/* BOITE 7 : paragraphe (2/3 du haut de la colonne droite) */
+.boite7{grid-column:3;grid-row:1 / 54;overflow:hidden;padding:4vh 7%;display:flex;flex-direction:column;justify-content:center;background:#2c6a96;color:#f2f8fd}
+.boite7 h3{font-size:2.7vw;font-weight:400;margin:0 0 2vh;line-height:1.2;color:#bfe3f8}
+.boite7 hr{width:30%;border:0;border-top:.8vh solid #7cc4ee;margin:0 0 2.5vh}
+.boite7 p{font-size:1.5vw;line-height:1.55;margin:0}
+
+/* PHOTO : image (1/3 du haut de la colonne droite) */
+.photo{grid-column:3;grid-row:54 / 81;overflow:hidden;background:#2c6a96}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* BOITE 5 : texte uniquement (2/3 du bandeau du bas, à gauche) */
+.boite5{grid-column:3;grid-row:81 / 101;width:66.66%;justify-self:start;overflow:hidden;padding:1.5vh 4%;display:flex;flex-direction:column;justify-content:center;background:#a9cfe9;color:#0e2a3f;border-top:.8vh solid #2f7fb8}
+.boite5 h3{font-size:1.6vw;font-weight:400;margin:0 0 .6vh;line-height:1.2;color:#0b4a7a}
+.boite5 p{font-size:1.15vw;line-height:1.35;margin:0}
+
+/* BOITE 6 : image uniquement (1/3 du bandeau du bas, à droite de la boîte 5) */
+.boite6{grid-column:3;grid-row:81 / 101;width:33.34%;justify-self:end;overflow:hidden;background:#9cc6e4;border-top:.8vh solid #2f7fb8}
+.boite6 img{width:100%;height:100%;object-fit:cover;object-position:50% 75%;display:block}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- COLONNE GAUCHE -->
+  <div class="gauche">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="vd.mp4" type="video/mp4">
+    </video>
+    <div class="ttl"><h1>Bassins aghlabides</h1><i></i></div>
+  </div>
+
+  <!-- BOITE 3 : image sombre + texte -->
+  <div class="boite3">
+    <h2>De l’eau pour la ville</h2>
+    <p>Kairouan n’a aucun fleuve à proximité. Entre 860 et 862, l’émir aghlabide Abu Ibrahim Ahmad fait construire deux immenses bassins pour alimenter la ville en eau.</p>
+  </div>
+
+  <!-- BOITE 4 -->
+  <div class="boite4">
+    <h3>Comment ils fonctionnent</h3>
+    <hr>
+    <p>L’eau de pluie des collines à l’ouest de la ville coule d’abord dans le petit bassin, où les sédiments se déposent. Elle passe ensuite dans le grand bassin, large d’environ 128 m et profond de 4,8 m, qui contient plus de 57&nbsp;000 m³ d’eau.</p>
+  </div>
+
+  <!-- BOITE 7 : paragraphe (en haut à droite) -->
+  <div class="boite7">
+    <h3>Une ville de citernes</h3>
+    <hr>
+    <p>Ces deux bassins faisaient partie d’un réseau d’une quinzaine de réservoirs construits autour de Kairouan. Seuls ces deux-là sont parvenus jusqu’à nous. Leurs murs en moellons, recouverts d’un enduit étanche, sont renforcés par des contreforts semi-circulaires.</p>
+  </div>
+
+  <!-- PHOTO : image (1/3) -->
+  <div class="photo">
+    <img src="img2.jpg" alt="Bassins aghlabides">
+  </div>
+
+  <!-- BOITE 5 : texte uniquement -->
+  <div class="boite5">
+    <h3>Le saviez-vous ?</h3>
+    <p>Au centre du grand bassin, un pilier évoque un ancien pavillon de plaisance des émirs.</p>
+  </div>
+
+  <!-- BOITE 6 : image uniquement -->
+  <div class="boite6">
+    <img src="img1.webp" alt="Mur des bassins aghlabides">
+  </div>
+
+</div>
+
+</body>
+</html>

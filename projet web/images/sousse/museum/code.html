@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Musée archéologique de Sousse</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;font-family:Georgia,Times,serif}
+
+.page{
+  display:grid;height:100vh;
+  grid-template-columns:33fr 34fr 33fr;
+  grid-template-rows:repeat(100,1fr);
+}
+
+/* COLONNE GAUCHE : vidéo + titre */
+.gauche{grid-column:1;grid-row:1 / 101;position:relative;overflow:hidden;background:#e6d3a8}
+.gauche video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block}
+.ttl{position:absolute;left:0;right:0;top:0;padding:5vh 8% 16vh;background:linear-gradient(rgba(247,240,225,.93),rgba(247,240,225,0));pointer-events:none}
+.ttl h1{margin:0;font-size:3.2vw;font-weight:400;letter-spacing:.1em;text-transform:uppercase;line-height:1.25;color:#7a2e12}
+.ttl i{display:block;width:40%;border-top:.8vh solid #b5532c;margin-top:2.5vh}
+
+/* BOITE 3 : image lumineuse (img1.jpg) sous un voile sable, texte + lien */
+/* BOITE 3 : image sombre un peu transparente, texte clair + lien */
+.boite3{grid-column:2;grid-row:1 / 48;overflow:hidden;padding:3vh 7%;display:flex;flex-direction:column;justify-content:center;
+  background:linear-gradient(rgba(42,26,14,.6),rgba(42,26,14,.6)),url("img1.jpg") center/cover no-repeat,#2a1a0e;
+  color:#fbf3e2;border-left:.5vw solid #b5532c;text-shadow:0 1px 6px rgba(0,0,0,.7)}
+.boite3 h2{font-size:3vw;font-weight:400;margin:0 0 2vh;line-height:1.1;color:#f0c987}
+.boite3 p{font-size:1.5vw;line-height:1.55;margin:0}
+.boite3 a{margin-top:2vh;font-size:1.4vw;color:#f0c987;text-decoration:underline;align-self:flex-start}
+.boite3 a:hover{color:#fff}
+
+
+
+/* BOITE 4 : pierre claire */
+.boite4{grid-column:2;grid-row:48 / 101;overflow:hidden;padding:4vh 7%;display:flex;flex-direction:column;justify-content:center;background:#f7f0e1;color:#3a2a1a}
+.boite4 h3{font-size:2.7vw;font-weight:400;margin:0 0 2vh;line-height:1.2;color:#8a3414}
+.boite4 hr{width:30%;border:0;border-top:.8vh solid #c8962e;margin:0 0 2.5vh}
+.boite4 p{font-size:1.5vw;line-height:1.55;margin:0}
+
+/* BOITE 7 : turquoise doux (tesselles de mosaïque) */
+.boite7{grid-column:3;grid-row:1 / 54;overflow:hidden;padding:4vh 7%;display:flex;flex-direction:column;justify-content:center;background:#c3ded7;color:#173b37}
+.boite7 h3{font-size:2.7vw;font-weight:400;margin:0 0 2vh;line-height:1.2;color:#0f5a54}
+.boite7 hr{width:30%;border:0;border-top:.8vh solid #2a8a80;margin:0 0 2.5vh}
+.boite7 p{font-size:1.5vw;line-height:1.55;margin:0}
+
+/* PHOTO : image (1/3 du haut de la colonne droite) */
+.photo{grid-column:3;grid-row:54 / 81;overflow:hidden;background:#d9c7a0}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* BOITE 5 : terre cuite claire */
+.boite5{grid-column:3;grid-row:81 / 101;overflow:hidden;padding:1.5vh 7%;display:flex;flex-direction:column;justify-content:center;background:#f0cdb0;color:#4a2412;border-top:.8vh solid #b5532c}
+.boite5 h3{font-size:1.8vw;font-weight:400;margin:0 0 .6vh;line-height:1.2;color:#8a3414}
+.boite5 p{font-size:1.3vw;line-height:1.35;margin:0}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- COLONNE GAUCHE -->
+  <div class="gauche">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="vd.mp4" type="video/mp4">
+    </video>
+    <div class="ttl"><h1>Musée archéologique de Sousse</h1><i></i></div>
+  </div>
+
+  <!-- BOITE 3 : image + texte + lien -->
+  <div class="boite3">
+    <h2>Dans la casbah</h2>
+    <p>Le musée est installé dans la casbah de Sousse, forteresse du XIe siècle construite sur les remparts de la médina. Créé en 1951, il a rouvert en 2012 après sa restauration.</p>
+    <a href="https://www.google.com/maps/search/?api=1&query=Mus%C3%A9e+arch%C3%A9ologique+de+Sousse" target="_blank" rel="noopener">Voir sur la carte</a>
+  </div>
+
+  <!-- BOITE 4 -->
+  <div class="boite4">
+    <h3>Mosaïques romaines</h3>
+    <hr>
+    <p>Le musée possède la deuxième plus grande collection de mosaïques de Tunisie, après le Bardo. Elles viennent de Sousse et de ses environs et datent surtout des IIe et IIIe siècles.</p>
+  </div>
+
+  <!-- BOITE 7 : paragraphe (en haut à droite) -->
+  <div class="boite7">
+    <h3>Dieux et légendes</h3>
+    <hr>
+    <p>Parmi les plus célèbres : le triomphe de Bacchus, l’enlèvement de Ganymède par Zeus changé en aigle, la toilette de Vénus et le triomphe de Neptune. Le musée expose aussi des statues et des objets funéraires.</p>
+  </div>
+
+  <!-- PHOTO : image (1/3) -->
+  <div class="photo">
+    <img src="img2.jpg" alt="Musée archéologique de Sousse">
+  </div>
+
+  <!-- BOITE 5 : texte uniquement -->
+  <div class="boite5">
+    <h3>Le saviez-vous ?</h3>
+    <p>Le jardin et la terrasse de la casbah offrent une vue panoramique sur la médina et le port.</p>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Ribat de Monastir</title>
+
+<style>
+*{box-sizing:border-box}
+
+html,body{
+  margin:0;
+  height:100%;
+  overflow:hidden;
+  font-family:Georgia,Times,serif
+}
+
+.page{
+  display:grid;
+  height:100vh;
+  grid-template-columns:33fr 34fr 33fr;
+  grid-template-rows:repeat(100,1fr);
+}
+
+/* COLONNE GAUCHE : video + titre */
+.gauche{
+  grid-column:1;
+  grid-row:1 / 101;
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(135deg,#285C70,#172D38)
+}
+
+.gauche video{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:sepia(.15) contrast(1.05)
+}
+
+.ttl{
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  padding:5vh 8% 16vh;
+  background:linear-gradient(rgba(10,20,25,.85),transparent);
+  pointer-events:none
+}
+
+.ttl h1{
+  margin:0;
+  font-size:3.2vw;
+  font-weight:400;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  line-height:1.25;
+  color:#E8D9B5
+}
+
+.ttl i{
+  display:block;
+  width:40%;
+  border-top:.8vh solid #C69B55;
+  margin-top:2.5vh
+}
+
+/* BOITE 3 : sombre */
+.boite3{
+  grid-column:2;
+  grid-row:1 / 43;
+  overflow:hidden;
+  padding:3vh 7%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background:
+  linear-gradient(rgba(23,45,56,.65),rgba(23,45,56,.65)),
+  url("img1.jpg") center/cover no-repeat,#172D38;
+  color:#F2EFE7;
+  border-left:.5vw solid #C69B55
+}
+
+.boite3 h2{
+  font-size:3vw;
+  font-weight:400;
+  margin:0 0 2vh;
+  line-height:1.1;
+  color:#E0B66D;
+  letter-spacing:.03em
+}
+
+.boite3 p{
+  font-size:1.45vw;
+  line-height:1.5;
+  margin:0 0 1.5vh
+}
+
+.boite3 a{
+  color:#E0B66D;
+  font-size:1.25vw;
+  text-decoration:none;
+  border-bottom:1px solid #E0B66D;
+  width:fit-content;
+  padding-bottom:4px
+}
+
+.boite3 a:hover{
+  color:#FFFFFF
+}
+
+/* BOITE 4 : claire */
+.boite4{
+  grid-column:2;
+  grid-row:43 / 101;
+  overflow:hidden;
+  padding:3vh 7%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background:#E8D9B5;
+  color:#172D38
+}
+
+.boite4 h3{
+  font-size:2.8vw;
+  font-weight:400;
+  margin:0 0 2vh;
+  line-height:1.2;
+  font-style:italic
+}
+
+.boite4 hr{
+  width:30%;
+  border:0;
+  border-top:.8vh solid #285C70;
+  margin:0 0 2vh
+}
+
+.boite4 p{
+  font-size:1.5vw;
+  line-height:1.5;
+  margin:0 0 1.5vh;
+  color:#172D38
+}
+
+/* BOITE 5 : photo */
+.boite5{
+  grid-column:3;
+  grid-row:1 / 81;
+  overflow:hidden;
+  background:linear-gradient(135deg,#285C70,#172D38)
+}
+
+.boite5 img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:sepia(.15) contrast(1.05)
+}
+
+/* BOITE 6 : sombre */
+.boite6{
+  grid-column:3;
+  grid-row:81 / 101;
+  overflow:hidden;
+  padding:1.5vh 7%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background:#172D38;
+  color:#F2EFE7;
+  border-top:.8vh solid #C69B55
+}
+
+.boite6 h3{
+  font-size:2vw;
+  font-weight:400;
+  margin:0 0 .8vh;
+  line-height:1.2;
+  color:#E0B66D
+}
+
+.boite6 p{
+  font-size:1.3vw;
+  line-height:1.35;
+  margin:0
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- COLONNE GAUCHE -->
+  <div class="gauche">
+
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="vd.mp4" type="video/mp4">
+    </video>
+
+    <div class="ttl">
+      <h1>Le Ribat de Monastir</h1>
+      <i></i>
+    </div>
+
+  </div>
+
+  <!-- BOITE 3 -->
+  <div class="boite3">
+
+    <h2>Le Ribat de Monastir</h2>
+
+    <p>
+      Fondé en 796 par le gouverneur Harthama Ibn Ayan,
+      le Ribat de Monastir est l'une des plus anciennes
+      forteresses de la côte tunisienne. Il servait à la
+      défense du littoral et à la surveillance de la mer.
+    </p>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Ribat+de+Monastir+Tunisie"
+       target="_blank">
+       Voir la localisation sur Google Maps
+    </a>
+
+  </div>
+
+  <!-- BOITE 4 -->
+  <div class="boite4">
+
+    <h3>Un monument historique</h3>
+
+    <hr>
+
+    <p>
+      Le Ribat est un exemple remarquable de l'architecture
+      militaire islamique. Il a été agrandi et transformé
+      au fil des siècles.
+    </p>
+
+    <p>
+      Ses remparts, ses tours de surveillance, sa cour
+      intérieure et sa tour de guet témoignent de son
+      importance stratégique dans l'histoire de Monastir.
+    </p>
+
+  </div>
+
+  <!-- BOITE 5 -->
+  <div class="boite5">
+
+    <img src="img2.jpg" alt="Le Ribat de Monastir">
+
+  </div>
+
+  <!-- BOITE 6 -->
+  <div class="boite6">
+
+    <h3>Patrimoine historique</h3>
+
+    <p>
+      Le Ribat de Monastir est aujourd'hui l'un des
+      monuments historiques les plus emblématiques
+      de la ville.
+    </p>
+
+  </div>
+
+</div>
+
+</body>
+</html>
